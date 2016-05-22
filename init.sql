@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS t_user;
+CREATE TABLE t_user (
+  id int(11) NOT NULL AUTO_INCREMENT COMMENT '自增的非业务主键id',
+  name varchar(50) DEFAULT NULL COMMENT '姓名',
+  birthdy DATE DEFAULT NULL COMMENT '生日',
+  money FLOAT DEFAULT NULL COMMENT '薪资',
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '用户表';
+
+INSERT INTO t_user VALUES ('1', '张三', '1986-01-10', 100);
+INSERT INTO t_user VALUES ('2', '李四', '1987-02-18', 200);
+INSERT INTO t_user VALUES ('3', '王五', '1988-03-12', 300);
