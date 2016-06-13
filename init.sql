@@ -10,3 +10,10 @@ CREATE TABLE t_user (
 INSERT INTO t_user VALUES ('1', '张三', '1986-01-10', 100);
 INSERT INTO t_user VALUES ('2', '李四', '1987-02-18', 200);
 INSERT INTO t_user VALUES ('3', '王五', '1988-03-12', 300);
+
+
+CREATE TABLE clob_test (
+  id int(11) NOT NULL AUTO_INCREMENT COMMENT '自增的非业务主键id',
+  big_test text DEFAULT NULL COMMENT '大段文本',
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '测试大段文本';
