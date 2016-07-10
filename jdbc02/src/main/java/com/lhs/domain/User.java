@@ -49,4 +49,14 @@ public class User {
     public void setMoney(float money) {
         this.money = money;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", birthDay=" + birthDay +
+                ", money=" + money +
+                '}';
+    }
 }
